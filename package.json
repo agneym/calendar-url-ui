@@ -12,8 +12,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@electrojet/svelte": "^0.0.11",
+    "@electrojet/svelte": "^0.0.14",
     "calendar-link": "^1.2.4",
+    "flatpickr": "^4.6.3",
     "svelte": "^3.12.1"
   },
   "husky": {
