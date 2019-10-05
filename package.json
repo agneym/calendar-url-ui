@@ -12,7 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@electrojet/svelte": "^0.0.9",
+    "@electrojet/svelte": "^0.0.11",
     "svelte": "^3.12.1"
   },
   "husky": {

@@ -5,3 +5,7 @@
     color: purple;
   }
 </style>
+
+<script>
+  export let name = "world";
+</script>
