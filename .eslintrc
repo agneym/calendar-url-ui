@@ -1,0 +1,14 @@
+{
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module"
+  },
+  "plugins": [
+    "html",
+    "@tivac/svelte"
+  ],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@tivac/svelte/svelte"
+  ]
+}
