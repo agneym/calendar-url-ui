@@ -13,6 +13,7 @@
   "license": "ISC",
   "dependencies": {
     "@electrojet/svelte": "^0.0.11",
+    "calendar-link": "^1.2.4",
     "svelte": "^3.12.1"
   },
   "husky": {

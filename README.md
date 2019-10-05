@@ -1,4 +1,4 @@
-# Svelte Electrojet Default Template
+# Calendar Link Generator
 
 ## Usage
 
