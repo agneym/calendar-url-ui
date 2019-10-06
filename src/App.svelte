@@ -3,6 +3,9 @@
 </header>
 <main>
   <Form on:submit={handleSubmit} />
+  {#if !!eventUrls}
+    <Result urls={eventUrls} />
+  {/if}
 </main>
 <footer>
 
@@ -16,17 +19,18 @@
 
 <script>
 import Form from "./Form.svelte";
+import Result from "./Result.svelte";
 import "flatpickr/dist/flatpickr.min.css";
 import { google, outlook, yahoo, ics } from "calendar-link";
 
-let eventUrls;
+let eventUrls = null;
 
 function handleSubmit({ detail: event }) {
-  eventUrls = {
-    google: google(event),
-    yahoo: yahoo(event),
-    outlook: outlook(event),
-    ics: ics(event),
-  }
+  eventUrls = [
+    google(event),
+    yahoo(event),
+    outlook(event),
+    ics(event),
+  ];
 } 
 </script>
