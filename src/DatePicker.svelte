@@ -1,8 +1,10 @@
-<input type="text" placeholder="Start date" bind:this={input} />
+<input type="text" placeholder={placeholder} bind:this={input} />
 
 <script>
   import { onMount } from 'svelte';
   import flatpickr from "flatpickr";
+
+  export let placeholder;
 
   let input;
 
