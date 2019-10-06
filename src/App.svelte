@@ -17,8 +17,16 @@
 <script>
 import Form from "./Form.svelte";
 import "flatpickr/dist/flatpickr.min.css";
+import { google, outlook, yahoo, ics } from "calendar-link";
 
-function handleSubmit({ detail: values }) {
-  console.log(values);
+let eventUrls;
+
+function handleSubmit({ detail: event }) {
+  eventUrls = {
+    google: google(event),
+    yahoo: yahoo(event),
+    outlook: outlook(event),
+    ics: ics(event),
+  }
 } 
 </script>

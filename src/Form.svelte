@@ -20,8 +20,8 @@ function handleSubmit(event) {
   const eventValues = {
     title: title.value,
     location: location.value,
-    startDate: startDate.value,
-    endData: endDate.value,
+    start: startDate.value,
+    end: endDate.value,
   }
   dispatch("submit", eventValues);
 }
