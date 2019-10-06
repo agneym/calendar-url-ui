@@ -1,6 +1,6 @@
 <div>
   <label for={id}>{label}</label>
-  <input placeholder={placeholder} type={type} id={id} />
+  <input placeholder={placeholder} type={type} id={id} name={id} />
 </div>
 
 <script>
