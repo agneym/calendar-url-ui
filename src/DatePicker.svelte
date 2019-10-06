@@ -1,4 +1,4 @@
-<Input type="text" placeholder={placeholder} bind:instance={input} name={id} label={label} />
+<Input type="text" placeholder={placeholder} id={id} bind:instance={input} label={label} />
 
 <script>
   import { onMount } from 'svelte';

@@ -2,7 +2,7 @@
   <h1>Calendar Link Generator</h1>
 </header>
 <main>
-  <Form />
+  <Form on:submit={handleSubmit} />
 </main>
 <footer>
 
@@ -17,4 +17,8 @@
 <script>
 import Form from "./Form.svelte";
 import "flatpickr/dist/flatpickr.min.css";
+
+function handleSubmit({ detail: values }) {
+  console.log(values);
+} 
 </script>
