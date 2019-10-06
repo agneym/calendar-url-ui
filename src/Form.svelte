@@ -9,15 +9,21 @@
 <script>
 import { createEventDispatcher } from "svelte";
 import Input from "./Input.svelte";
-import Datepicker from "./DatePicker.svelte";
-
-let eventValues;
+import Datepicker from "./DatePicker.svelte";;
 
 const dispatch = createEventDispatcher();
 
 function handleSubmit(event) {
   event.preventDefault();
-  console.log(event.target);
+  const target = event.target;
+  const { title, location, startDate, endDate } = target;
+  const eventValues = {
+    title: title.value,
+    location: location.value,
+    startDate: startDate.value,
+    endData: endDate.value,
+  }
+  dispatch("submit", eventValues);
 }
 
 </script>
