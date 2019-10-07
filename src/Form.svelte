@@ -3,8 +3,15 @@
   <Input placeholder="The Meeting place" id="location" label="Location" />
   <Datepicker placeholder="Start Date" id="startDate" label="Start Date" />
   <Datepicker placeholder="End Date" id="endDate" label="End Date" />
-  <button>Generate Calendar Links</button>
+  <button class="btn btn-primary button">Generate Links</button>
 </form>
+
+<style>
+  .button {
+    display: block;
+    margin: 3rem auto 0;
+  }
+</style>
 
 <script>
 import { createEventDispatcher } from "svelte";

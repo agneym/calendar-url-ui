@@ -1,7 +1,7 @@
-<header>
+<header class="header">
   <h1>Calendar Link Generator</h1>
 </header>
-<main>
+<main class="main-content">
   <Form on:submit={handleSubmit} />
   {#if !!eventUrls}
     <Result urls={eventUrls} />
@@ -14,6 +14,14 @@
 <style>
   :global(body) {
     margin: 0;
+  }
+  .header {
+    text-align: center;
+    margin: 5rem 0 3rem;
+  }
+  .main-content {
+    max-width: 600px;
+    margin: 0 auto;
   }
 </style>
 
