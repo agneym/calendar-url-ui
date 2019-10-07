@@ -1,6 +1,6 @@
-<div>
-  <label for={id}>{label}</label>
-  <input placeholder={placeholder} type={type} id={id} name={id} bind:this={instance} />
+<div class="form-group">
+  <label for={id} class="form-label">{label}</label>
+  <input placeholder={placeholder} type={type} id={id} name={id} bind:this={instance} class="form-input" />
 </div>
 
 <script>
