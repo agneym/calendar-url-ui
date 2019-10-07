@@ -1,15 +1,22 @@
 <form on:submit={handleSubmit}>
-  <Input placeholder="Meeting for the Calendar" id="title" label="Title" />
+  <Input placeholder="Meeting for the Calendar" id="title" label="Title" required={true} />
   <Input placeholder="The Meeting place" id="location" label="Location" />
-  <Datepicker placeholder="Start Date" id="startDate" label="Start Date" />
-  <Datepicker placeholder="End Date" id="endDate" label="End Date" />
-  <button class="btn btn-primary button">Generate Links</button>
+  <Datepicker placeholder="Start Date" id="startDate" label="Start Date" required={true} />
+  <Datepicker placeholder="End Date" id="endDate" label="End Date" required={true} />
+  <div class="btn-container">
+    <button class="btn btn-primary button" type="submit">Generate Links</button>
+    <button class="btn button" type="reset">Reset</button>
+  </div>
 </form>
 
 <style>
+  .btn-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+  }
   .button {
-    display: block;
-    margin: 3rem auto 0;
+    margin: 0 0.5rem;
   }
 </style>
 
