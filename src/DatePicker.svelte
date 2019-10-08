@@ -1,4 +1,13 @@
-<Input type="text" placeholder={placeholder} id={id} bind:instance={input} label={label} bind:value={value} />
+<Input
+  type="text"
+  placeholder={placeholder}
+  id={id}
+  bind:instance={input}
+  label={label}
+  bind:value={value} 
+  required={required}
+  on:input
+/>
 
 <script>
   import { onMount } from 'svelte';
@@ -9,6 +18,7 @@
   export let id;
   export let label;
   export let value;
+  export let required;
 
   let input;
 

@@ -1,4 +1,4 @@
-<div class="form-group">
+<div class="form-group" class:has-success={success} class:has-error={error}>
   <label for={id} class="form-label">{label}</label>
   <input
     placeholder={placeholder}
@@ -9,7 +9,11 @@
     class="form-input"
     required={required}
     bind:value={value}
+    on:input
   />
+  {#if hint}
+    <p class="form-input-hint"></p>
+  {/if}
 </div>
 
 <script>
@@ -19,4 +23,7 @@ export let label;
 export let instance;
 export let required = false;
 export let value;
+export let hint;
+export let success = false;
+export let error = false;
 </script>
