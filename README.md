@@ -1,10 +1,10 @@
 # Calendar Link Generator
 
-## Usage
+Generate links for Gmail, Outlook, Yahoo or plain old ICS right from your browser.
 
-```
-npm init electrojet --template=svelte
-```
+https://calendar.agney.dev
+
+## Development
 
 You can also skip the template and pick Svelte from the options.
 
@@ -22,8 +22,6 @@ Port default to 4567
 npm run build
 ```
 
-> For plugins and other options, see [Electrojet CLI](https://github.com/BoyWithSilverWings/create-electrojet)
-
 ### Credits
 
-1. [Template Webpack Repo](https://github.com/sveltejs/template-webpack)
+1. [Electrojet Svelte Template](https://github.com/BoyWithSilverWings/create-electrojet)
