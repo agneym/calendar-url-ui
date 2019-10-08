@@ -23,7 +23,7 @@
     }
   },
   "lint-staged": {
-    "*.{js,json,css,md,svelte}": [
+    "*.{js,json,css,md}": [
       "prettier --write",
       "git add"
     ]
@@ -33,7 +33,6 @@
     "eslint": "^6.5.1",
     "eslint-plugin-html": "^6.0.0",
     "husky": "^3.0.8",
-    "lint-staged": "^9.4.1",
-    "prettier": "^1.18.2"
+    "lint-staged": "^9.4.1"
   }
 }
