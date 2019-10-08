@@ -25,6 +25,9 @@
     margin: 0;
     white-space: nowrap;
     border-right: 0;
+    padding: 0 0.5rem;
+    box-shadow: unset;
+    border: 0.1rem solid rgba(0, 0, 0, 0.1);
   }
   .text::-webkit-scrollbar {
     height: 0.2rem;

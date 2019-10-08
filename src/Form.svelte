@@ -1,7 +1,7 @@
 <form on:submit={handleSubmit}>
   <Input placeholder="Meeting for the Calendar" id="title" label="Title" required={true} />
   <Input placeholder="The Meeting place" id="location" label="Location" />
-  <TextArea placeholder="What is your event about?" id="description" />
+  <TextArea placeholder="What is your event about?" label="Description" id="description" />
   <Datepicker placeholder="Start Date" id="startDate" label="Start Date" required={true} />
   <Datepicker placeholder="End Date" id="endDate" label="End Date" required={true} />
   <div class="btn-container">
