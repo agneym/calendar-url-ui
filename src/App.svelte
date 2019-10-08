@@ -34,11 +34,18 @@ import { google, outlook, yahoo, ics } from "calendar-link";
 let eventUrls = null;
 
 function handleSubmit({ detail: event }) {
-  eventUrls = [
-    google(event),
-    yahoo(event),
-    outlook(event),
-    ics(event),
-  ];
+  eventUrls = [{
+      name: "Google",
+      url: google(event),
+    }, {
+      name: "Yahoo",
+      url: yahoo(event),
+    }, {
+      name: "Outlook",
+      url: outlook(event), 
+    }, {
+      name: "ICS",
+      url: ics(event),
+  }];
 } 
 </script>
