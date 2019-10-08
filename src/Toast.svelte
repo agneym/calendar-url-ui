@@ -1,5 +1,6 @@
 <script>
   import { message } from "./toastStore";
+  import { fade, fly } from 'svelte/transition';
 </script>
 
 <style>
@@ -12,5 +13,5 @@
 </style>
 
 {#if $message}
-  <div class="toast styled-toast">{$message}</div>
+  <div class="toast styled-toast" in:fly={{ x: 100, duration: 400 }} out:fade>{$message}</div>
 {/if}
