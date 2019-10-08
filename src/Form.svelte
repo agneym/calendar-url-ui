@@ -16,9 +16,17 @@
     required={true}
     bind:value={eventValues.endDate}
     on:input={validateEndDate}
+    hint={endDateError}
+    error={!!endDateError}
   />
   <div class="btn-container">
-    <button class="btn btn-primary button" type="submit">Generate Links</button>
+    <button
+      class="btn btn-primary button"
+      type="submit"
+      disabled={endDateError}
+    >
+      Generate Links
+    </button>
     <button class="btn button" type="reset">Reset</button>
   </div>
 </form>
@@ -49,17 +57,17 @@ let eventValues = {
   endDate: "",
 };
 
+let endDateError = "";
 const dispatch = createEventDispatcher();
 
 function validateEndDate(event) {
-  console.log(event)
   const endDateEl = event.target;
   const currentEndDate = endDateEl.value;
   const startDate = eventValues.startDate;
-  if(!isBefore(startDate, endDate)) {
-    endDateEl.setCustomValidity("End Date has to be before start date.");
+  if(!isBefore(new Date(startDate), new Date(currentEndDate))) {
+    endDateError = "End Date has to be before start date.";
   } else {
-    endDateEl.setCustomValidity("");
+    endDateError = "";
   }
 }
 

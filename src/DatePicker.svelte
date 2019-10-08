@@ -7,6 +7,9 @@
   bind:value={value} 
   required={required}
   on:input
+  error={error}
+  success={success}
+  hint={hint}
 />
 
 <script>
@@ -19,6 +22,9 @@
   export let label;
   export let value;
   export let required;
+  export let hint;
+  export let success;
+  export let error;
 
   let input;
 

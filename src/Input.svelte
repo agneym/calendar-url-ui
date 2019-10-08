@@ -12,7 +12,7 @@
     on:input
   />
   {#if hint}
-    <p class="form-input-hint"></p>
+    <p class="form-input-hint">{hint}</p>
   {/if}
 </div>
 
