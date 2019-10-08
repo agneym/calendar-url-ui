@@ -7,14 +7,14 @@ function createToastMessage() {
 
   function setMessage(message) {
     set(message);
-    setTimeout(() =>{
+    setTimeout(() => {
       set("");
     }, interval);
   }
 
   return {
     subscribe,
-    set: setMessage,
+    set: setMessage
   };
 }
 
