@@ -19,6 +19,14 @@
     hint={endDateError}
     error={!!endDateError}
   />
+
+  <div class="form-group">
+    <label class="form-switch">
+      <input type="checkbox" id="busy" bind:checked={eventValues.busy}>
+      <i class="form-icon"></i> Show as busy (Google only)
+    </label>
+  </div>
+
   <div class="btn-container">
     <button
       class="btn btn-primary button"
@@ -55,6 +63,7 @@ let eventValues = {
   description: "",
   startDate: "",
   endDate: "",
+  busy: false
 };
 
 let endDateError = "";
