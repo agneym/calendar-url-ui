@@ -25,3 +25,4 @@ npm run build
 ### Credits
 
 1. [Electrojet Svelte Template](https://github.com/BoyWithSilverWings/create-electrojet)
+2. [Calendar Link Library](https://www.npmjs.com/package/calendar-link)
