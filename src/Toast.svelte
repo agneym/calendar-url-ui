@@ -1,6 +1,6 @@
-<div class="toast styled-toast">
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-</div>
+<script>
+  import { message } from "./toastStore";
+</script>
 
 <style>
   .styled-toast {
@@ -11,4 +11,6 @@
   }
 </style>
 
-<script></script>
+{#if $message}
+  <div class="toast styled-toast">{$message}</div>
+{/if}
