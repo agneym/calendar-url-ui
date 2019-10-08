@@ -10,6 +10,7 @@
 <footer>
 
 </footer>
+<Toast />
 
 <style>
   :global(body) {
@@ -28,6 +29,7 @@
 <script>
 import Form from "./Form.svelte";
 import Result from "./Result.svelte";
+import Toast from "./Toast.svelte";
 import "flatpickr/dist/flatpickr.min.css";
 import { google, outlook, yahoo, ics } from "calendar-link";
 
