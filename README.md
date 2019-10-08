@@ -4,6 +4,11 @@ Generate links for Gmail, Outlook, Yahoo or plain old ICS right from your browse
 
 https://calendar.agney.dev
 
+## Prerequisites
+
+1. [Node JS](https://nodejs.org/)
+2. [Yarn](https://yarnpkg.com)
+
 ## Development
 
 You can also skip the template and pick Svelte from the options.
@@ -11,7 +16,7 @@ You can also skip the template and pick Svelte from the options.
 1. To start development:
 
 ```
-npm start --port=4567
+yarn start
 ```
 
 Port default to 4567
@@ -19,7 +24,7 @@ Port default to 4567
 2. For build
 
 ```
-npm run build
+yarn run build
 ```
 
 ### Credits
