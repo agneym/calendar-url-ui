@@ -8,6 +8,7 @@
     label="Start Date"
     required={true}
     bind:value={eventValues.startDate}
+    on:input={startDateChange}
   />
   <Datepicker
     placeholder="End Date"
@@ -15,7 +16,7 @@
     label="End Date"
     required={true}
     bind:value={eventValues.endDate}
-    on:input={validateEndDate}
+    on:input={endDateChange}
     hint={endDateError}
     error={!!endDateError}
   />
@@ -69,14 +70,29 @@ let eventValues = {
 let endDateError = "";
 const dispatch = createEventDispatcher();
 
-function validateEndDate(event) {
-  const endDateEl = event.target;
-  const currentEndDate = endDateEl.value;
-  const startDate = eventValues.startDate;
+function validateDates(startDate, currentEndDate) {
   if(!isBefore(new Date(startDate), new Date(currentEndDate))) {
     endDateError = "End Date has to be before start date.";
   } else {
     endDateError = "";
+  }
+}
+
+function endDateChange(event) {
+  const endDateEl = event.target;
+  const currentEndDate = endDateEl.value;
+  const startDate = eventValues.startDate;
+  if(startDate) {
+    validateDates(startDate, currentEndDate);
+  }
+}
+
+function startDateChange(event) {
+  const startDateEl = event.target;
+  const currentStartDate = startDateEl.value;
+  const endDate = eventValues.endDate;
+  if(endDate) {
+    validateDates(currentStartDate, endDate);
   }
 }
 

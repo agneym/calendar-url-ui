@@ -19,7 +19,7 @@ You can also skip the template and pick Svelte from the options.
 yarn start
 ```
 
-Port default to 4567
+Port defaults to 4567
 
 2. For build
 
